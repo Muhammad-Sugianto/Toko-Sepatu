@@ -32,7 +32,7 @@
                        ?>
                         <h5 class="card-title">Data User</h5>
                         <div class="card-tools">
-                            <button data-bs-toggle="modal" data-bs-target="#add" type="button" class="btn btn-primary btn-xs "><i class="bi bi-plus"></i> Add</button>
+                            <button data-bs-toggle="modal" data-bs-target="#add" type="button" class="btn btn-primary btn-xs "><i class="bi bi-plus"></i> Add <i class="bi bi-person"></i></button>
                                
                         </div>
                         <!-- Bordered Table -->
@@ -40,7 +40,7 @@
                             <thead class="text-center">
                                 <tr>
                                     <th scope="col">NO</th>
-                                    <th scope="col">NameUser</th>
+                                    <th scope="col">NamaUser</th>
                                     <th scope="col">Username</th>
                                     <th scope="col">Password</th>
                                     <th scope="col">Level</th>
@@ -72,22 +72,6 @@
                            </tbody>
                         </table>
                         <nav aria-label="...">
-                <ul class="pagination">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-
-                
-
 
                     </div>
                 </div>

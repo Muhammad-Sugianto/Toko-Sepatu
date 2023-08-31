@@ -20,7 +20,7 @@ class User extends CI_Controller {
             'user' => $this->m_user->get_all_data(),
             'isi' =>'v_user',
         );
-        $this->load->view('layout/v_wrapper_frontend',$data, FALSE);
+        $this->load->view('layout/v_wrapper_backend',$data, FALSE);
     }
 
     // Add a new item

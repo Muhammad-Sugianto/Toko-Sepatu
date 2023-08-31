@@ -13,16 +13,33 @@ class User_login {
     public function login($username, $password) {
         $cek = $this->ci->m_auth->login_user($username, $password);
         if ($cek) {
-            // Store user data in session
+            $nama_user = $cek->nama_user;
+            $level = $cek->level;
+            
             $this->ci->session->set_userdata('username', $username);
-            // Redirect to the appropriate page
-            redirect('admin'); // Change 'admin' to the correct page
+            $this->ci->session->set_userdata('nama_user', $nama_user);
+            $this->ci->session->set_userdata('level', $level);
+            redirect('admin');  // Ganti 'admin' dengan halaman yang sesuai
         } else {
             $this->ci->session->set_flashdata('error', 'Username Atau Password Salah!!');
             redirect('auth/login_user');
         }
     }
 
-    // ... (other methods)
+    public function proteksi_halaman()
+    {
+        if ($this->ci->session->userdata('username') == '') {
+            $this->ci->session->set_flashdata('error', 'Anda Belum Login !!');
+            redirect('auth/login_user');
+        }
+    }
+
+    public function logout() {
+        $this->ci->session->unset_userdata('username');
+        $this->ci->session->unset_userdata('nama_user');
+        $this->ci->session->unset_userdata('level');
+        $this->ci->session->set_flashdata('pesan', 'Anda Berhasil LOgout !!!');
+        redirect('auth/login_user');
+    }
 }
 ?>

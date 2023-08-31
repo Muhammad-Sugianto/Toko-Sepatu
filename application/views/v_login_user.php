@@ -1,117 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx" class="no-js">
+
 <head>
-	<title> Login | </title>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="<?= base_url() ?>template/admin/login/images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/css/util.css">
-	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/admin/login/css/main.css">
-<!--===============================================================================================-->
+	<!-- Site Title -->
+	<title> | <?= $title ?></title>
+	<!--
+		CSS
+		============================================= -->
+	<link  href="<?= base_url() ?>template/olshop/css/linearicons.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/font-awesome.min.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/themify-icons.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/bootstrap.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/owl.carousel.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/nice-select.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/nouislider.min.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/ion.rangeSlider.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/magnific-popup.css" rel="stylesheet">
+	<link  href="<?= base_url() ?>template/olshop/css/main.css" rel="stylesheet">
 </head>
-<body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-26">
-						Welcome
-					</span>
-					<span class="login100-form-title p-b-48">
-						<i class="zmdi zmdi-font">dmin</i>
-					</span>
 
-        <?php 
-        echo form_open('auth/login_user')
-        ?>
-
-
-					<div class="wrap-input100 validate-input" data-validate = "">
-						<input class="input100" type="text" name="username">
-						<span class="focus-input100" data-placeholder="Email"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<span class="btn-show-pass">
-							<i class="zmdi zmdi-eye"></i>
-						</span>
-						<input class="input100" type="password" name="password">
-						<span class="focus-input100" data-placeholder="Password"></span>
-					</div>
-                    <div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Remember me
-						</label>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button type="submit" class="login100-form-btn">
-								Login
-							</button>
-						</div>
-					</div>  
-         <?php echo form_close()?> 
-         
-					<div class="text-center p-t-50">
-                    <div class="text-center p-t-10">
-						<a class="txt1" href="#">
-							Forgot Password?
-						</a>
-					</div>
-						<span class="txt1">
-							Don’t have an account?
-						</span>
-
-						<a class="txt2" href="#">
-							Sign Up
-						</a>
-					</div>
-				</form>
+<!-- Start Banner Area -->
+<section class="banner-area organic-breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+				<div class="col-first">
+					<h1>Login/Register</h1>
+					<nav class="d-flex align-items-center">
+						<a href="<?= base_url() ?>template/olshop/index.html">Home<span class="lnr lnr-arrow-right"></span></a>
+						<a href="<?= base_url() ?>template/olshop/category.html">Login/Register</a>
+					</nav>
+				</div>
 			</div>
 		</div>
-	</div>
-	
+	</section>
+	<!-- End Banner Area -->
 
-    <div id="dropDownSelect1"></div>
+	<!--================Login Box Area =================-->
+	<section class="login_box_area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<img class="img-fluid" src="<?= base_url() ?>template/olshop/img/login.jpg" alt="">
+						<div class="hover">
+							<h4>New to our website?</h4>
+							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
+							<a class="primary-btn" href="<?= base_url() ?>template/olshop/registration.html">Create an Account</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+					<?php 
+         echo validation_errors('<div class="alert alert-warning alert-dismissible">                   
+         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>                   
+         <h5><i class="icon fas fa-exclamation-triangle"></i> Nintifications!</h5>', '</div>');
+
+         if ($this->session->flashdata('error')) {
+              echo '<div class="alert alert-danger alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <h5><i class="icon fas fa-ban"></i> Nintifications!</h5>';
+              echo $this->session->flashdata('error');
+              echo '</div>';
+         }
+
+         if ($this->session->flashdata('pesan')) {
+              echo '<div class="alert alert-success alert-dismissible">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <h5><i class="icon fas fa-check"></i>Succes!!</h5>';
+              echo $this->session->flashdata('pesan');
+              echo '</div>';
+         }?>
+
+						<h3>Log in to enter</h3>
+						
+						<?php 
+							echo form_open('auth/login_user')
+						?>
+						
+							<div class="col-md-12 form-group">
+							<input type="text" class="form-control" id="username" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'admin'">
+							</div>
+							<div class="col-md-12 form-group">
+							<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'admin'">
+							</div>
+							<div class="col-md-12 form-group">
+								<div class="creat_account">
+									<input type="checkbox" id="f-option2" name="selector">
+									<label for="f-option2">Keep me logged in</label>
+								</div>
+							</div>
+							<div class="col-md-12 form-group">
+								<button type="submit" value="submit" class="primary-btn">Log In</button>
+								<a href="<?= base_url() ?> ">Forgot Password?</a>
+							</div>
+						<?php
+							echo form_close()
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Login Box Area =================-->
 	
-    <!--===============================================================================================-->
-        <script src="<?= base_url() ?>template/admin/login/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
-        <script src="<?= base_url() ?>template/admin/login/vendor/animsition/js/animsition.min.js"></script>
-    <!--===============================================================================================-->
-        <script src="<?= base_url() ?>template/admin/login/vendor/bootstrap/js/popper.js"></script>
-        <script src="<?= base_url() ?>template/admin/login/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--===============================================================================================-->
-        <script src="<?= base_url() ?>template/admin/login/vendor/select2/select2.min.js"></script>
-    <!--=============<?= base_url() ?>templa==================================================================================-->
-        <script src="<?= base_url() ?>template/admin/login/vendor/daterangepicker/moment.min.js"></script>
-        <script src="<?= base_url() ?>template/admin/login/vendor/daterangepicker/daterangepicker.js"></script>
-    <!--===============================================================================================-->
-        <script src="<?= base_url() ?>template/admin/login/vendor/countdowntime/countdowntime.js"></script>
-    <!--===============================================================================================-->
-        <script src="<?= base_url() ?>template/admin/login/js/main.js"></script>
-    
+	
+<script src="<?= base_url() ?>template/olshop/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="<?= base_url() ?>template/olshop/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	 crossorigin="anonymous"></script>
+	<script src="<?= base_url() ?>template/olshop/js/vendor/bootstrap.min.js"></script>
+	<script src="<?= base_url() ?>template/olshop/js/jquery.ajaxchimp.min.js"></script>
+	<script src="<?= base_url() ?>template/olshop/js/jquery.nice-select.min.js"></script>
+	<script src="<?= base_url() ?>template/olshop/js/jquery.sticky.js"></script>
+	<script src="<?= base_url() ?>template/olshop/js/nouislider.min.js"></script>
+	<script src="<?= base_url() ?>template/olshop/js/countdown.js"></script>
+	<script src="<?= base_url() ?>template/olshop/js/jquery.magnific-popup.min.js"></script>
+	<script src="<?= base_url() ?>template/olshop/js/owl.carousel.min.js"></script>
+	<!--gmaps Js-->
+	<script src="<?= base_url() ?>template/olshop/ttps://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="<?= base_url() ?>template/olshop/js/gmaps.min.js"></script>
+	<script src="<?= base_url() ?>template/olshop/js/main.js"></script>
 </body>
-</html
+
+</html>	

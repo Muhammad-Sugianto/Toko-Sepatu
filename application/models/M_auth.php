@@ -11,4 +11,3 @@ class M_auth extends CI_Model {
         return $this->db->get()->row();
     }
 }
-?>
