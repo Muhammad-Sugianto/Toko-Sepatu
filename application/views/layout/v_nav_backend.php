@@ -236,7 +236,7 @@
 <ul class="sidebar-nav" id="sidebar-nav">
 <b><li><i class="bi bi-border-style"></i></i> <span>Dashboard</span> </li></b>
   <li class="nav-item">
-    <a class="nav-link collapsed" href="<?= base_url('admin/dashboard') ?>">
+    <a class="nav-link collapsed" href="<?= base_url('admin') ?>">
     <i class="bi bi-speedometer2"></i>
       <span>Dashboard</span>
     </a>

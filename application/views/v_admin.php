@@ -1,9 +1,10 @@
+
  <!-- ======= Header ======= -->
  <header id="header" class="header fixed-top d-flex align-items-center">
 
 <div class="d-flex align-items-center justify-content-between">
-  <a href="index.html" class="logo d-flex align-items-center">
-    <img src="assets/img/logo.png" alt="">
+  <a href="<?= base_url() ?>template/admin/index.html" class="logo d-flex align-items-center">
+    <img src="<?= base_url() ?>template/admin/assets/img/logo.png" alt="">
     <span class="login100-form-title p-b-48">
       <i class="zmdi zmdi-font">Admin</i>
     </span>
@@ -215,7 +216,7 @@
         </li>
 
         <li>
-          <a class="dropdown-item d-flex align-items-center" href="#">
+          <a class="dropdown-item d-flex align-items-center" href="<?= base_url('auth/login_user') ?>">
             <i class="bi bi-box-arrow-right"></i>
             <span>Sign Out</span>
           </a>
@@ -235,14 +236,14 @@
 <ul class="sidebar-nav" id="sidebar-nav">
 <b><li><i class="bi bi-border-style"></i></i> <span>Dashboard</span> </li></b>
   <li class="nav-item">
-    <a class="nav-link collapsed" href="<?= base_url() ?>">
+    <a class="nav-link collapsed" href="<?= base_url('admin') ?>">
     <i class="bi bi-speedometer2"></i>
       <span>Dashboard</span>
     </a>
   </li><!-- End Dashboard Nav -->
 
 
-  <li class="nav-item">
+  <li class="nav-item <?php if ($this->uri->segment(1) == 'user') {echo "active";} ?>">
     <a class="nav-link collapsed" href="<?= base_url('user') ?>">
     <i class="bi bi-person"></i></i>
       <span>User</span>
@@ -250,22 +251,11 @@
   </li><!-- End User Nav -->
 
   <b><li><i class="bi bi-grid-fill"></i></i> <span>Menu</span> </li></b>
-  <li class="nav-item">
-    <a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-    <i class="bi bi-tags"></i><span>Kategori</span><i class="bi bi-chevron-down ms-auto"></i>
+  <li class="nav-item <?php if ($this->uri->segment(1) == 'kategori') {echo "active";} ?>">
+    <a class="nav-link collapsed" href="<?= base_url('kategori') ?>">
+    <i class="bi bi-tags"></i>
+      <span>Kategori</span>
     </a>
-    <!-- <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="tables-general.html">
-          <i class="bi bi-circle"></i><span>General Tables</span>
-        </a>
-      </li>
-      <li>
-        <a href="tables-data.html" class="active">
-          <i class="bi bi-circle"></i><span>Data Tables</span>
-        </a>
-      </li>
-    </ul> -->
   </li><!-- End Tables Nav -->
 
   <li class="nav-item">
@@ -286,22 +276,11 @@
     </ul>
   </li><!-- End Charts Nav -->
 
-  <li class="nav-item">
-    <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-    <i class="bi bi-boxes"></i></i><span>Produk</span><i class="bi bi-chevron-down ms-auto"></i>
+  <li class="nav-item <?php if ($this->uri->segment(1) == 'produk') {echo "active";} ?>">
+    <a class="nav-link collapsed" href="<?= base_url('produk') ?>">
+    <i class="bi bi-boxes"></i></i>
+      <span>Produk</span>
     </a>
-    <ul id="icons-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-      <li>
-        <a href="icons-bootstrap.html">
-          <i class="bi bi-circle"></i><span>Bootstrap Icons</span>
-        </a>
-      </li>
-      <li>
-        <a href="icons-remix.html">
-          <i class="bi bi-circle"></i><span>Remix Icons</span>
-        </a>
-      </li>
-    </ul>
   </li><!-- End Icons Nav -->
 
   <li class="nav-item">
@@ -360,6 +339,3 @@
 
 
 </aside><!-- End Sidebar-->
-
-
-

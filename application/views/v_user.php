@@ -117,7 +117,7 @@
 
                 <div class="form-group">
                     <label>Level</label>
-                  <select name="level" class="form-control">
+                  <select name="level" class="form-select" class="form-control">
                         <option value="1" selected>Admin</option>
                         <option value="2">User</option>
                   </select>
@@ -176,7 +176,7 @@
 
                 <div class="form-group">
                     <label>Level</label>
-                  <select name="level" class="form-control">
+                  <select name="level"  class="form-select" class="form-control" >
                         <option value="1" <?php  if ($value->level==1){
                           echo 'selected';
                           } ?>>Admin</option>
@@ -202,7 +202,7 @@
 
 
 
-   <!-- !!! Modal EDIT-->
+   <!-- !!! Modal DELETE-->
    <?php    foreach ($user as $key => $value) { ?>
 
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="delete">
