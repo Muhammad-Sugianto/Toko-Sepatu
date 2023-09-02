@@ -15,6 +15,14 @@ class M_gambarproduk extends CI_Model
         return $this->db->get()->result();
     }
 
+        public function get_data($id_gambar)
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_gambar');
+        $this->db->where('id_gambar', $id_gambar); // Menghapus tanda kutip ganda pada $id_gambar
+        return $this->db->get()->row();
+    }
+
 
     public function get_gambar($id_produk)
     {
@@ -24,5 +32,18 @@ class M_gambarproduk extends CI_Model
         return $this->db->get()->result();
         
     }
+
+    public function add($data)
+    {
+        $this->db->insert('tbl_gambar', $data);
+        
+    }
+
+    public function delete($id_gambar)
+    {
+        $this->db->where('id_gambar', $id_gambar);
+        $this->db->delete('tbl_gambar');
+    }
+    
 
 }    

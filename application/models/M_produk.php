@@ -26,10 +26,6 @@ class M_produk extends CI_Model
 
 
 
-
-
-
-
     
     public function add($data)
     {
