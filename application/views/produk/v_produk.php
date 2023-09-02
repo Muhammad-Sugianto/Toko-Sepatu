@@ -43,6 +43,7 @@
                                     <th scope="col">Nama Produk</th>
                                     <th scope="col">Kategori</th>
                                     <th scope="col">Harga</th>
+                                    <!-- <th scope="col">Deskripsi</th> -->
                                     <th scope="col">Gambar</th>
                                     <th scope="col">Action</th>
                                 </tr>
@@ -55,11 +56,12 @@
                                   <td class="text-center"><?= $value->nama_produk ?></td>
                                   <td class="text-center"><?= $value->nama_kategori ?></td>
                                   <td class="text-center">Rp. <?= number_format($value->harga, 0) ?></td>
+                                  <!-- <td class="text-center"><?= $value->deskripsi ?></td> -->
                                   <td class="text-center"><img src="<?= base_url('assets/gambar/' .$value->gambar) ?>" width="100px"></td>
                                   <td>
 
-                                    <a href="" class="btn btn-warning sm"><i class="bi bi-pencil-square"></i></a>
-                                    <a href="" class="btn btn-danger sm"><i class="bi bi-trash3"></i></a>
+                                    <a href="<?= base_url('produk/edit/' .$value->id_produk) ?>" class="btn btn-warning sm"><i class="bi bi-pencil-square"></i></a>
+                                    <button class="btn btn-danger sm" data-bs-toggle="modal" data-bs-target="#delete<?= $value->id_produk ?>" ><i class="bi bi-trash3"></i></button>
 
                                   </td>
                                 </tr>
@@ -74,3 +76,36 @@
         </div>
     </section>
 </main>
+
+
+
+
+
+<!-- !!! Modal DELETE-->
+<?php    foreach ($produk as $key => $value) { ?>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="delete">
+       
+        </button>
+        <div class="modal" id="delete<?= $value->id_produk ?>" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Delete <?= $value->nama_produk ?></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+               
+                <h5>Apakah Anda Yakin Ingin Menghapus Data Ini...?</h5>
+       
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <a href="<?= base_url('produk/delete/' . $value->id_produk)?>" class="btn btn-primary">Delete</a>
+              </div>
+             
+            </div>
+          </div>
+        </div><!-- End Disabled Animation Modal-->              
+        <?php } ?>           

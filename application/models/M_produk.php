@@ -9,11 +9,26 @@ class M_produk extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('tbl_produk');
-        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_produk.id_kategori', 
-            'left');    
+        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_produk.id_kategori', 'left');    
         $this->db->order_by('tbl_produk.id_produk', 'desc');
         return $this->db->get()->result();
     }
+
+
+     public function get_data($id_produk)
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_produk');
+        $this->db->join('tbl_kategori', 'tbl_kategori.id_kategori = tbl_produk.id_kategori', 'left');
+        $this->db->where('id_produk', $id_produk);
+        return $this->db->get()->row();
+    }
+
+
+
+
+
+
 
     
     public function add($data)

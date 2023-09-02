@@ -243,12 +243,7 @@
   </li><!-- End Dashboard Nav -->
 
 
-  <li class="nav-item <?php if ($this->uri->segment(1) == 'user') {echo "active";} ?>">
-    <a class="nav-link collapsed" href="<?= base_url('user') ?>">
-    <i class="bi bi-person"></i></i>
-      <span>User</span>
-    </a>
-  </li><!-- End User Nav -->
+ 
 
   <b><li><i class="bi bi-grid-fill"></i></i> <span>Menu</span> </li></b>
   <li class="nav-item <?php if ($this->uri->segment(1) == 'kategori') {echo "active";} ?>">
@@ -283,6 +278,15 @@
     </a>
   </li><!-- End Icons Nav -->
 
+
+  <li class="nav-item <?php if ($this->uri->segment(1) == 'gambarproduk') {echo "active";} ?>">
+    <a class="nav-link collapsed" href="<?= base_url('gambarproduk') ?>">
+    <i class="bi bi-images"></i>
+      <span>Gambar Produk</span>
+    </a>
+  </li>
+
+
   <li class="nav-item">
     <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
     <i class="bi bi-clipboard2-data"></i><span>Laporan</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -315,6 +319,13 @@
       <span>Profile</span>
     </a>
   </li><!-- End Profile Page Nav -->
+
+  <li class="nav-item <?php if ($this->uri->segment(1) == 'user') {echo "active";} ?>">
+    <a class="nav-link collapsed" href="<?= base_url('user') ?>">
+    <i class="bi bi-person"></i></i>
+      <span>User</span>
+    </a>
+  </li><!-- End User Nav -->
 
   <li class="nav-item">
     <a class="nav-link collapsed" href="pages-contact.html">

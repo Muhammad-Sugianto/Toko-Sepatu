@@ -153,7 +153,7 @@
 
 
 
-<!-- !!! Modal EDIT-->
+<!-- !!! Modal DELETE-->
 <?php    foreach ($kategori as $key => $value) { ?>
 
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="delete">
