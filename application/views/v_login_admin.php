@@ -98,12 +98,11 @@
 							<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'admin'">
 							</div>
 							<div class="col-md-12 form-group">
-									<a href="" class="btn btn-success">Website</a>
-							</div>
-							<div class="col-md-12 form-group">
+								
+							<a href="" class="btn btn-success">Website</a>
 								<button type="submit" value="submit" class="primary-btn">Log In</button>
 								<a href="<?= base_url() ?> ">Forgot Password?</a>
-							</div>
+								</div>	
 						<?php
 							echo form_close()
 						?>

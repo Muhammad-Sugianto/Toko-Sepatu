@@ -273,7 +273,7 @@
 
   <li class="nav-item <?php if ($this->uri->segment(1) == 'produk') {echo "active";} ?>">
     <a class="nav-link collapsed" href="<?= base_url('produk') ?>">
-    <i class="bi bi-boxes"></i></i>
+    <i class="bi bi-boxes"></i>
       <span>Produk</span>
     </a>
   </li><!-- End Icons Nav -->
