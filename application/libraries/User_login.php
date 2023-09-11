@@ -21,16 +21,19 @@ class User_login {
             $this->ci->session->set_userdata('level', $level);
             redirect('admin');  // Ganti 'admin' dengan halaman yang sesuai
         } else {
-            $this->ci->session->set_flashdata('error', 'Username Atau Password Salah!!');
+            $this->ci->session->set_flashdata('error', 'Username atau Password Salah!!');
             redirect('auth/login_user');
         }
     }
 
     public function proteksi_halaman()
     {
-        if ($this->ci->session->userdata('username') == '') {
+        
+        if (!$this->is_logged_in()) {
             $this->ci->session->set_flashdata('error', 'Anda Belum Login !!');
             redirect('auth/login_user');
+        } else {
+            echo "Anda sudah login!"; // Debugging, hapus setelah Anda yakin perlindungan berfungsi
         }
     }
 
@@ -38,8 +41,15 @@ class User_login {
         $this->ci->session->unset_userdata('username');
         $this->ci->session->unset_userdata('nama_user');
         $this->ci->session->unset_userdata('level');
-        $this->ci->session->set_flashdata('pesan', 'Anda Berhasil LOgout !!!');
+        $this->ci->session->set_flashdata('pesan', 'Anda Berhasil Logout !!!');
         redirect('auth/login_user');
+    }
+
+    private function is_logged_in() {
+        // Periksa apakah pengguna sudah login berdasarkan logika otentikasi Anda
+        // Kembalikan true jika sudah login, false jika belum
+        // Sebagai contoh, Anda dapat memeriksa apakah variabel sesi ada
+        return $this->ci->session->userdata('username') !== null;
     }
 }
 ?>

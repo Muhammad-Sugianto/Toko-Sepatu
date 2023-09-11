@@ -1,78 +1,57 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
-
+<html>
 <head>
-	<!-- Mobile Specific Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/fav.png">
-	<!-- Author Meta -->
-	<meta name="author" content="CodePixar">
-	<!-- Meta Description -->
-	<meta name="description" content="">
-	<!-- Meta Keyword -->
-	<meta name="keywords" content="">
-	<!-- meta character set -->
-	<meta charset="UTF-8">
-	<!-- Site Title -->
-	<title> | <?= $title ?></title>
-	<!--
-		CSS
-		============================================= -->
-	<link  href="<?= base_url() ?>template/olshop/css/linearicons.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/font-awesome.min.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/themify-icons.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/bootstrap.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/owl.carousel.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/nice-select.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/nouislider.min.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/ion.rangeSlider.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/magnific-popup.css" rel="stylesheet">
-	<link  href="<?= base_url() ?>template/olshop/css/main.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Login/Register</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font -->
+	<link rel="stylesheet" type="text/css" href="<?= base_url() ?>template/login/css/sourcesanspro-font.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="<?= base_url() ?>template/login/css/style.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="path-to-bootstrap-css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
-
-<!-- Start Banner Area -->
-<section class="banner-area organic-breadcrumb">
-		<div class="container">
-			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
-				<div class="col-first">
-					<h1>Login/Register</h1>
-					<nav class="d-flex align-items-center">
-						<a href="<?= base_url() ?>template/olshop/index.html">Home<span class="lnr lnr-arrow-right"></span></a>
-						<a href="<?= base_url() ?>template/olshop/category.html">Login/Register</a>
-					</nav>
-				</div>
-			</div>
+<body class="form-v8">
+	<div class="page-content">
+		<div class="header">
+			<h1 style="color: white;">Login/Register</h1>
+			<div class="navigation">
+			<nav class="d-flex justify-content-center align-items-center">
+				<h5 style="text-align: center;"><a href="<?= base_url('/') ?>template/olshop/index.html"><span class="lnr lnr-arrow-right"></span> Home </a></h5>
+			</nav>
 		</div>
-	</section>
-	<!-- End Banner Area -->
 
-	<!--================Login Box Area =================-->
-	<section class="login_box_area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="login_box_img">
-						<img class="img-fluid" src="<?= base_url() ?>template/olshop/img/login.jpg" alt="">
-						<div class="hover">
-							<h4>New to our website?</h4>
-							<p>There are advances being made in science and technology everyday, and a good example of this is the</p>
-							<a class="primary-btn" href="<?= base_url() ?>template/olshop/registration.html">Create an Account</a>
-						</div>
+		</div>
+	</div>
+	<div class="page-content">
+		<div class="form-v8-content">
+			<div class="form-left">
+				<img src="<?= base_url() ?>template/login/images/login1.jpeg" alt="form">
+			</div>
+			<div class="form-right">
+				<div class="tab">
+					<div class="tab-inner">
+						<button class="tablinks" onclick="openCity(event, 'sign-in')">Sign In</button>
+					</div>
+					<div class="tab-inner">
+						<button class="tablinks" onclick="openCity(event, 'sign-up')" id="defaultOpen">Sign Up</button>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="login_form_inner">
-					<?php 
+				
+				<?php 
          echo validation_errors('<div class="alert alert-warning alert-dismissible">                   
          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>                   
-         <h5><i class="icon fas fa-exclamation-triangle"></i> Nintifications!</h5>', '</div>');
+         <h5><i class="icon fas fa-exclamation-triangle"></i> Notification!</h5>', '</div>');
 
          if ($this->session->flashdata('error')) {
               echo '<div class="alert alert-danger alert-dismissible">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              <h5><i class="icon fas fa-ban"></i> Nintifications!</h5>';
+              <h5><i class="icon fas fa-ban"></i> Notification!</h5>';
               echo $this->session->flashdata('error');
               echo '</div>';
          }
@@ -83,53 +62,144 @@
               <h5><i class="icon fas fa-check"></i>Succes!!</h5>';
               echo $this->session->flashdata('pesan');
               echo '</div>';
-         }?>
+         }?>	
 
-						<h3>Log in to enter</h3>
-						
-						<?php 
-							echo form_open('auth/login_user')
-						?>
-						
-							<div class="col-md-12 form-group">
-							<input type="text" class="form-control" id="username" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'admin'">
+
+
+			<form class="form-detail" action="<?= site_url('auth/login_user') ?>" method="post">
+
+				
+					<div class="tabcontent" id="sign-in">
+						<div class="form-row">
+							<label class="form-row-inner">
+								<input type="text" name="username" id="username" class="input-text" required>
+								<span class="label">Username</span>
+  								<span class="border"></span>
+							</label>
+						</div>
+						<div class="form-row">
+							<label class="form-row-inner">
+								<input type="password" name="password" id="password" class="input-text" required>
+								<span class="label">Password</span>
+								<span class="border"></span>
+							</label>
+						</div>
+					
+						<div class="form-row">
+							<div class="col-6">
+								<a href="<?= base_url() ?>" class="btn btn-success btn-block">Website</a>
 							</div>
-							<div class="col-md-12 form-group">
-							<input type="text" class="form-control" id="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'admin'">
+							<div class="col-6">
+								<input type="submit" name="login" class="btn btn-primary btn-block" value="Sign In">
 							</div>
-							<div class="col-md-12 form-group">
-									<a href="" class="btn btn-success">Website</a>
-							</div>
-							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" class="primary-btn">Log In</button>
-								<a href="<?= base_url() ?> ">Forgot Password?</a>
-							</div>
-						<?php
-							echo form_close()
-						?>
+						</div>
+
 					</div>
+				</form>
+
+				
+
+				<form class="form-detail" action="<?= site_url('auth/register_user') ?>" method="post">
+
+				
+					<div class="tabcontent" id="sign-up">
+						<div class="form-row">
+							<label class="form-row-inner">
+								<input type="text" name="full_name" id="full_name" class="input-text" required>
+								<span class="label">Full Name</span>
+  								<span class="border"></span>
+							</label>
+						</div>
+						<div class="form-row">
+							<label class="form-row-inner">
+								<input type="text" name="email" id="email" class="input-text" required>
+								<span class="label">E-Mail</span>
+  								<span class="border"></span>
+							</label>
+						</div>
+						<div class="form-row">
+							<label class="form-row-inner">
+								<input type="password" name="password" id="password" class="input-text" required>
+								<span class="label">Password</span>
+								<span class="border"></span>
+							</label>
+						</div>
+						<div class="form-row">
+							<label class="form-row-inner">
+								<input type="password" name="confirm_password" id="confirm_password" class="input-text" required>
+								<span class="label">Confirm Password</span>
+								<span class="border"></span>
+							</label>
+						</div>
+						<div class="form-row-last">
+							<input type="submit" name="register" class="register" value="Register">
+						</div>
+					</div>
+				</form>
+
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================End Login Box Area =================-->
-	
-	
-<script src="<?= base_url() ?>template/olshop/js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="<?= base_url() ?>template/olshop/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-	 crossorigin="anonymous"></script>
-	<script src="<?= base_url() ?>template/olshop/js/vendor/bootstrap.min.js"></script>
-	<script src="<?= base_url() ?>template/olshop/js/jquery.ajaxchimp.min.js"></script>
-	<script src="<?= base_url() ?>template/olshop/js/jquery.nice-select.min.js"></script>
-	<script src="<?= base_url() ?>template/olshop/js/jquery.sticky.js"></script>
-	<script src="<?= base_url() ?>template/olshop/js/nouislider.min.js"></script>
-	<script src="<?= base_url() ?>template/olshop/js/countdown.js"></script>
-	<script src="<?= base_url() ?>template/olshop/js/jquery.magnific-popup.min.js"></script>
-	<script src="<?= base_url() ?>template/olshop/js/owl.carousel.min.js"></script>
-	<!--gmaps Js-->
-	<script src="<?= base_url() ?>template/olshop/ttps://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="<?= base_url() ?>template/olshop/js/gmaps.min.js"></script>
-	<script src="<?= base_url() ?>template/olshop/js/main.js"></script>
-</body>
+	</div>
+		
+	<script type="text/javascript">
+        function closeAlert(button) {
+            const alert = button.parentElement;
+            alert.style.display = "none"; // Menyembunyikan elemen alert saat tombol close diklik
+        }
 
-</html>	
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            
+            // Simpan status tab yang sedang aktif ke dalam cookie
+            document.cookie = "activeTab=" + cityName;
+        }
+				// Fungsi untuk mendapatkan nilai cookie berdasarkan namanya
+		function getCookie(name) {
+			const value = "; " + document.cookie;
+			const parts = value.split("; " + name + "=");
+			if (parts.length === 2) {
+				return parts.pop().split(";").shift();
+			}
+		}
+
+		// Fungsi untuk menampilkan tab yang sesuai berdasarkan nilai cookie
+		function displayActiveTab() {
+			const activeTab = getCookie("activeTab");
+			if (activeTab) {
+				// Hanya tampilkan tab yang sesuai jika ada nilai cookie "activeTab"
+				openCity({ currentTarget: document.querySelector(`button[onclick="openCity(event, '${activeTab}')]`) }, activeTab);
+			} else {
+				// Jika tidak ada cookie "activeTab", secara default, tampilkan tab Sign Up
+				document.getElementById("defaultOpen").click();
+			}
+		}
+
+		// Panggil fungsi displayActiveTab saat dokumen selesai dimuat
+		document.addEventListener("DOMContentLoaded", displayActiveTab);
+
+		// Saat halaman dimuat ulang, panggil fungsi displayActiveTab lagi
+		window.addEventListener("beforeunload", () => {
+			displayActiveTab();
+		});
+		</script>
+		<script>
+        window.setTimeout(function() {
+            $('.alert').fadeTo(500,0).slideUp(500,function() {
+                $(this).remove();
+            });
+        }, 3000)
+    </script>   
+
+</body>
+</html>

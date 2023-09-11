@@ -84,7 +84,7 @@ class Gambarproduk extends CI_Controller
             // Hapus data gambar dari database
             $this->m_gambarproduk->delete($id_gambar);
         
-            $this->session->set_flashdata('pesan', 'Gambar berhasil dihapus');ch
+            $this->session->set_flashdata('pesan', 'Gambar berhasil dihapus');
             redirect('gambarproduk/add/' . $id_produk);
         }
     
