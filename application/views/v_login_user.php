@@ -19,12 +19,8 @@
 <body class="form-v8">
 	<div class="page-content">
 		<div class="header">
-			<h1 style="color: white;">Sign In/ Sign/ Up</h1>
-			<div class="navigation">
-			<nav class="d-flex justify-content-center align-items-center">
-				<h5 style="text-align: center;"><a href="<?= base_url('/') ?>template/olshop/index.html"><span class="lnr lnr-arrow-right"></span> Home </a></h5>
-			</nav>
-		</div>
+			<h1 style="color: white;">Login / Register</h1>
+			
 
 		</div>
 	</div>

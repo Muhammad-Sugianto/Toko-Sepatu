@@ -15,7 +15,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>ShoeShop</title>
+	<title>ShoeShop | </title>
 	<!--
 		CSS
 		============================================= -->
@@ -33,16 +33,14 @@
 	<!-- Include jQuery -->
 	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Include Owl Carousel CSS and JS -->
-    <link rel="stylesheet" href="<?= base_url() ?>template/olshop/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>template/olshop/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <script src="<?= base_url() ?>template/olshop/https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	
-</head>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://code.jquery.com/jquery
 
 	
-	<script src="<?= base_url() ?>template/olshop/js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="<?= base_url() ?>template/olshop/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	
+	
 	 crossorigin="anonymous"></script>
 	<script src="<?= base_url() ?>template/olshop/js/vendor/bootstrap.min.js"></script>
 	<script src="<?= base_url() ?>template/olshop/js/jquery.ajaxchimp.min.js"></script>
@@ -58,18 +56,25 @@
 	<script src="<?= base_url() ?>template/olshop/js/main.js"></script>
 	
 <!-- Add the following JavaScript code at the bottom of your HTML page, before the closing </body> tag -->
+<!-- Start of your HTML content -->
+
+<!-- Your HTML code for the slider -->
+
+<!-- Add jQuery library -->
+<script src="<?= base_url() ?>template/olshop/https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
     $(document).ready(function() {
-        // Initialize Owl Carousel slider
-        $(".active-banner-slider").owlCarousel({
-            items: 1,               // Number of items to display at once
-            loop: true,             // Enable looping
-            autoplay: true,         // Enable autoplay
-            autoplayTimeout: 5000,  // Autoplay interval in milliseconds (5 seconds)
-            autoplayHoverPause: true // Pause autoplay on hover
+        $('.active-banner-slider').owlCarousel({
+            loop: true, // Infinite loop
+            autoplay: true, // Autoplay the slider
+            autoplayTimeout: 5000, // Autoplay interval in milliseconds (5 seconds in this case)
+            items: 1, // Number of items to show at a time
+            nav: false, // Hide navigation buttons (next/prev)
+            dots: true // Show navigation dots
         });
     });
 </script>
-</body>
 
+</body>
 </html>

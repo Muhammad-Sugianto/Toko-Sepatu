@@ -39,12 +39,25 @@ class Auth extends CI_Controller {
         }
 
         // ... (kode setelahnya)
-
-
         $data = array (
             'title' => 'Login User',
         );
         $this->load->view('v_login_user', $data);
     }
-}
+
+        public function logout()
+        {
+            // Hapus semua data sesi
+            $this->session->sess_destroy();
+            
+            // Alihkan ke halaman login atau halaman lain yang sesuai
+            redirect('auth/login_user');
+        }
+                    private function is_logged_in()
+            {
+                if (!$this->session->userdata('user_id')) {
+
+            }
+        }
+    } 
 ?>

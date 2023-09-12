@@ -37,13 +37,14 @@ class User_login {
         }
     }
 
-    public function logout() {
-        $this->ci->session->unset_userdata('username');
-        $this->ci->session->unset_userdata('nama_user');
-        $this->ci->session->unset_userdata('level');
-        $this->ci->session->set_flashdata('pesan', 'Anda Berhasil Logout !!!');
-        redirect('auth/login_user');
-    }
+        public function logout() {
+            $this->ci->session->unset_userdata('username');
+            $this->ci->session->unset_userdata('nama_user');
+            $this->ci->session->unset_userdata('level');
+            $this->ci->session->set_flashdata('pesan', 'Anda berhasil logout'); // Mengubah pesan notifikasi
+            redirect('auth/login_user');
+        }
+        
 
     private function is_logged_in() {
         // Periksa apakah pengguna sudah login berdasarkan logika otentikasi Anda
