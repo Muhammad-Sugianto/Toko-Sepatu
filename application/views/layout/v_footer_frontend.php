@@ -1,79 +1,219 @@
-<!-- start footer Area -->
-<footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3  col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>About Us</h6>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
-							magna aliqua.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-4  col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>Newsletter</h6>
-						<p>Stay update with our latest</p>
-						<div class="" id="mc_embed_signup">
+<footer class="footer footer-2">
+            <div class="icon-boxes-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="icon-box icon-box-side">
+                                <span class="icon-box-icon text-dark">
+                                    <i class="icon-rocket"></i>
+                                </span>
+                                <div class="icon-box-content">
+                                    <h3 class="icon-box-title">Free Shipping</h3><!-- End .icon-box-title -->
+                                    <p>orders $50 or more</p>
+                                </div><!-- End .icon-box-content -->
+                            </div><!-- End .icon-box -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
 
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="form-inline">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="icon-box icon-box-side">
+                                <span class="icon-box-icon text-dark">
+                                    <i class="icon-rotate-left"></i>
+                                </span>
 
-								<div class="d-flex flex-row">
+                                <div class="icon-box-content">
+                                    <h3 class="icon-box-title">Free Returns</h3><!-- End .icon-box-title -->
+                                    <p>within 30 days</p>
+                                </div><!-- End .icon-box-content -->
+                            </div><!-- End .icon-box -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
 
-									<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-									 required="" type="email">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="icon-box icon-box-side">
+                                <span class="icon-box-icon text-dark">
+                                    <i class="icon-info-circle"></i>
+                                </span>
+
+                                <div class="icon-box-content">
+                                    <h3 class="icon-box-title">Get 20% Off 1 Item</h3><!-- End .icon-box-title -->
+                                    <p>When you sign up</p>
+                                </div><!-- End .icon-box-content -->
+                            </div><!-- End .icon-box -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="icon-box icon-box-side">
+                                <span class="icon-box-icon text-dark">
+                                    <i class="icon-life-ring"></i>
+                                </span>
+
+                                <div class="icon-box-content">
+                                    <h3 class="icon-box-title">We Support</h3><!-- End .icon-box-title -->
+                                    <p>24/7 amazing services</p>
+                                </div><!-- End .icon-box-content -->
+                            </div><!-- End .icon-box -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div><!-- End .icon-boxes-container -->
+
+			
+
+        	<div class="footer-newsletter bg-image" style="background-image: url(<?= base_url() ?>template/olshop/assets/images/backgrounds/bg-2.jpg)">
+        		<div class="container">
+        			<div class="heading text-center">
+                        <h3 class="title">Get The Latest Deals</h3><!-- End .title -->
+                        <p class="title-desc">and receive <span>$20 coupon</span> for first shopping</p><!-- End .title-desc -->
+                    </div><!-- End .heading -->
+
+                    <div class="row">
+                    	<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                            <form action="#">
+    							<div class="input-group">
+    								<input type="email" class="form-control" placeholder="Enter your Email Address" aria-label="Email Adress" aria-describedby="newsletter-btn" required>
+    								<div class="input-group-append">
+    									<button class="btn btn-primary" type="submit" id="newsletter-btn"><span>Subscribe</span><i class="icon-long-arrow-right"></i></button>
+    								</div><!-- .End .input-group-append -->
+    							</div><!-- .End .input-group -->
+                            </form>
+                    	</div><!-- End .col-sm-10 offset-sm-1 col-lg-6 offset-lg-3 -->
+                    </div><!-- End .row -->
+        		</div><!-- End .container -->
+        	</div><!-- End .footer-newsletter bg-image -->
+
+        	<div class="footer-middle">
+	            <div class="container">
+	            	<div class="row">
+	            		<div class="col-sm-12 col-lg-6">
+	            			<div class="widget widget-about">
+	            				<img src="<?= base_url() ?>template/olshop/assets/images/demos/demo-2/logo.png" class="footer-logo" alt="Footer Logo" width="105" height="25">
+	            				<p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. </p>
+	            				
+	            				<div class="widget-about-info">
+	            					<div class="row">
+	            						<div class="col-sm-6 col-md-4">
+	            							<span class="widget-about-title">Got Question? Call us 24/7</span>
+	            							<a href="tel:123456789">+0123 456 789</a>
+	            						</div><!-- End .col-sm-6 -->
+	            						<div class="col-sm-6 col-md-8">
+	            							<span class="widget-about-title">Payment Method</span>
+	            							<figure class="footer-payments">
+							        			<img src="<?= base_url() ?>template/olshop/assets/images/payments.png" alt="Payment methods" width="272" height="20">
+							        		</figure><!-- End .footer-payments -->
+	            						</div><!-- End .col-sm-6 -->
+	            					</div><!-- End .row -->
+	            				</div><!-- End .widget-about-info -->
+	            			</div><!-- End .widget about-widget -->
+	            		</div><!-- End .col-sm-12 col-lg-3 -->
+
+	            		<div class="col-sm-4 col-lg-2">
+	            			<div class="widget">
+	            				<h4 class="widget-title">Information</h4><!-- End .widget-title -->
+
+	            				<ul class="widget-list">
+	            					<li><a href="about.html">About Molla</a></li>
+	            					<li><a href="#">How to shop on Molla</a></li>
+	            					<li><a href="#">FAQ</a></li>
+	            					<li><a href="contact.html">Contact us</a></li>
+	            					<li><a href="login.html">Log in</a></li>
+	            				</ul><!-- End .widget-list -->
+	            			</div><!-- End .widget -->
+	            		</div><!-- End .col-sm-4 col-lg-3 -->
+
+	            		<div class="col-sm-4 col-lg-2">
+	            			<div class="widget">
+	            				<h4 class="widget-title">Customer Service</h4><!-- End .widget-title -->
+
+	            				<ul class="widget-list">
+	            					<li><a href="#">Payment Methods</a></li>
+	            					<li><a href="#">Money-back guarantee!</a></li>
+	            					<li><a href="#">Returns</a></li>
+	            					<li><a href="#">Shipping</a></li>
+	            					<li><a href="#">Terms and conditions</a></li>
+	            					<li><a href="#">Privacy Policy</a></li>
+	            				</ul><!-- End .widget-list -->
+	            			</div><!-- End .widget -->
+	            		</div><!-- End .col-sm-4 col-lg-3 -->
+
+	            		<div class="col-sm-4 col-lg-2">
+	            			<div class="widget">
+	            				<h4 class="widget-title">My Account</h4><!-- End .widget-title -->
+
+	            				<ul class="widget-list">
+	            					<li><a href="#">Sign In</a></li>
+	            					<li><a href="cart.html">View Cart</a></li>
+	            					<li><a href="#">My Wishlist</a></li>
+	            					<li><a href="#">Track My Order</a></li>
+	            					<li><a href="#">Help</a></li>
+	            				</ul><!-- End .widget-list -->
+	            			</div><!-- End .widget -->
+	            		</div><!-- End .col-sm-64 col-lg-3 -->
+	            	</div><!-- End .row -->
+	            </div><!-- End .container -->
+	        </div><!-- End .footer-middle -->
+
+	        <div class="footer-bottom">
+	        	<div class="container">
+	        		<p class="footer-copyright">Copyright © 2023 ShoeStore . All Rights Reserved.</p><!-- End .footer-copyright -->
+	        		<ul class="footer-menu">
+	        			<li><a href="#">Terms Of Use</a></li>
+	        			<li><a href="#">Privacy Policy</a></li>
+	        		</ul><!-- End .footer-menu -->
+
+	        		<div class="social-icons social-icons-color">
+	        			<span class="social-label">Social Media</span>
+    					<a href="#" class="social-icon social-facebook" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></a>
+    					<a href="#" class="social-icon social-twitter" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>
+    					<a href="#" class="social-icon social-instagram" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
+    					<a href="#" class="social-icon social-youtube" title="Youtube" target="_blank"><i class="icon-youtube"></i></a>
+    					<a href="#" class="social-icon social-pinterest" title="Pinterest" target="_blank"><i class="icon-pinterest"></i></a>
+    				</div><!-- End .soial-icons -->
+	        	</div><!-- End .container -->
+	        </div><!-- End .footer-bottom -->
+        </footer><!-- End .footer -->
+		<button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
 
 
-									<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-									<div style="position: absolute; left: -5000px;">
-										<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-									</div>
 
-									<!-- <div class="col-lg-4 col-md-4">
-												<button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
-											</div>  -->
-								</div>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3  col-md-6 col-sm-6">
-					<div class="single-footer-widget mail-chimp">
-						<h6 class="mb-20">Instragram Feed</h6>
-						<ul class="instafeed d-flex flex-wrap">
-							<li><img src="template/olshop/img/i1.jpg" alt=""></li>
-							<li><img src="template/olshop/img/i2.jpg" alt=""></li>
-							<li><img src="template/olshop/img/i3.jpg" alt=""></li>
-							<li><img src="template/olshop/img/i4.jpg" alt=""></li>
-							<li><img src="template/olshop/img/i5.jpg" alt=""></li>
-							<li><img src="template/olshop/img/i6.jpg" alt=""></li>
-							<li><img src="template/olshop/img/i7.jpg" alt=""></li>
-							<li><img src="template/olshop/img/i8.jpg" alt=""></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h6>Follow Us</h6>
-						<p>Let us be social</p>
-						<div class="footer-social d-flex align-items-center">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
-				<p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | ShoeShop <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">|</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
-			</div>
-		</div>
-	</footer>
-	<!-- End footer Area -->								
+    <!-- Plugins JS File -->
+    <script src="<?= base_url() ?>template/olshop/assets/js/jquery.min.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/jquery.hoverIntent.min.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/jquery.waypoints.min.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/superfish.min.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/owl.carousel.min.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/jquery.plugin.min.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/jquery.countdown.min.js"></script>
+    <!-- Main JS File -->
+    <script src="<?= base_url() ?>template/olshop/assets/js/main.js"></script>
+    <script src="<?= base_url() ?>template/olshop/assets/js/demos/demo-2.js"></script>
+
+
+	 <!-- Tambahkan CSS untuk mobile menu -->
+	 <link rel="stylesheet" href="<?= base_url() ?>template/olshop/assets/css/mobile-menu.css">
+
+		<script src="<?= base_url() ?>template/olshop/assets/js/jquery-3.6.0.min.js"></script>
+					<script>
+			// Saat dokumen selesai dimuat
+			document.addEventListener("DOMContentLoaded", function () {
+				// Temukan tombol toggle menu
+				var toggleButton = document.querySelector(".mobile-menu-toggler");
+
+				// Temukan kontainer menu mobile
+				var mobileMenuContainer = document.querySelector(".mobile-menu-container");
+
+				// Tambahkan event listener untuk mengelola klik tombol toggle menu
+				toggleButton.addEventListener("click", function () {
+				// Toggling kelas 'active' pada kontainer menu mobile
+				mobileMenuContainer.classList.toggle("active");
+				});
+			});
+			</script>
+
+
+		<!-- Tambahkan script untuk mobile menu -->
+		<script src="<?= base_url() ?>template/olshop/assets/js/mobile-menu.js"></script>
+
+</body>
+<!-- molla/index-1.html  22 Nov 2019 09:55:32 GMT -->
+</html>		

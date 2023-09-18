@@ -1,3 +1,3 @@
-<header class="header_area sticky-header">
-		<div class="main_menu">
-			<!-- <h1 style="text-align: center; font: size 200px;">MUHAMMAD SUGIANTO</h1> -->
+<body>
+<div class="page-wrapper">
+        <header class="header header-2 header-intro-clearance">
